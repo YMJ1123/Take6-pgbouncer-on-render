@@ -1,5 +1,8 @@
 # 取官方映像
 FROM pgbouncer/pgbouncer:latest
+# 完全關閉 container 的健康檢查
+HEALTHCHECK NONE
+
 
 # # 複製設定檔
 # COPY pgbouncer.ini /etc/pgbouncer/pgbouncer.ini
